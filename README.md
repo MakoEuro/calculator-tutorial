@@ -1,6 +1,6 @@
 # How to create a simple calculator
 
-For a demo click [here](https://makoeuro.github.io/calculator-tutorial)
+For a demo click [here](https://makoeuro.github.io/calculator-tutorial/)!
 
 ## HTML
 
