@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-# --- TUTORIAL ---
-
-## How to create a temperature converter
-=======
 # How to create a simple calculator
 
 ## HTML
