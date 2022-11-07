@@ -6,7 +6,7 @@ For a demo click [here](https://makoeuro.github.io/calculator-tutorial/)!
 
 To begin, create a new folder and inside a file called `index.html` and use any basic template to start off the project, typically with the basic:
 
-```
+```HTML
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <body>
@@ -21,7 +21,7 @@ Inside the JavaScript folder on the first line write `'use strict';` which will 
 
 Going back to the HTML code, write the following inside the `<body>`:
 
-```
+```HTML
     <main>
         <div class="container">
             <div class="calculator">
@@ -37,7 +37,7 @@ Going back to the HTML code, write the following inside the `<body>`:
 
 This will create the basis for the calculator, with the `"calculator"` class holding all the elements of the inputs, write this next line of code *between* the header element `<h2>` and the `<section>`:
 
-```
+```HTML
     <form name="calc">
         <input type="text" name="one" class="number-one" placeholder="First number">
         <input type="text" name="two" clas="number-two" placeholder="Second number">
@@ -52,7 +52,7 @@ Afterward, let's move onto the JavaScript, styling the CSS will come last as we 
 
 Firstly, add these pre-made sets of code, this will make the writing process substantially easier by making the lines of code necessary a lot more simplified:
 
-```
+```JS
     // Add event listener
     function onEvent(event, selector, callback) {
         return selector.addEventListener(event, callback);
@@ -71,7 +71,7 @@ Firstly, add these pre-made sets of code, this will make the writing process sub
 
 Next to connect our JavaScript to our HTML so that our next few lines don't produce any errors, add this line to your HTML right before the `<body>`, this will read the JS code before executing anything.
 
-```
+```JS
     <head>
         <script src="assets/index.js" defer></script>
     </head>
@@ -79,7 +79,7 @@ Next to connect our JavaScript to our HTML so that our next few lines don't prod
 
 Right afterward head back to your JS file and input these selectors which will read your classes from the HTML code and let them be used as variables in the JS file.
 
-```
+```JS
     const form = select('form');
     const numberOne = select('.number-one');
     const numberTwo = select('.number-two');
@@ -89,7 +89,7 @@ Right afterward head back to your JS file and input these selectors which will r
 
 Next, add this verification code to make sure the input value *is* a number and not empty or a character other than numbers.
 
-```
+```JS
     function isNumber(str) {
         let input = str.trim();
         
@@ -101,13 +101,13 @@ Next, add this verification code to make sure the input value *is* a number and 
 ```
 
 Additionally a small counter for errors after the previous code:
-```
+```JS
     let count = 0;
 ```
 
 And finally, to create the actual conversion to do addition, write this `onEvent` code:
 
-```
+```JS
     // Adding an event listener
     onEvent('click', btn, function() {
         let a = numberOne.value.trim();
@@ -133,7 +133,7 @@ This all may look complicated but on breakdown, it will create 2 variables at th
 
 Now for an optional choice, you may add some code for styling into the CSS with this. Head over to that remaining `index.css` file and input this:
 
-```
+```CSS
     @charset "utf-8";
     @import './reset.css';
     
@@ -218,9 +218,13 @@ Now for an optional choice, you may add some code for styling into the CSS with 
 
 Now to make the CSS file work, you need to do the same as you did with the JS file and go to the HTML, and add this line of code in the `<head>` section.
 
+```HTML
+    <link rel="stylesheet" href="assets/index.css" media="screen">
+```
+
 And finally, create a new file called `reset.css` which will style everything to the ideal proportions to make everything line up properly:
 
-```
+```CSS
     @charset "utf-8";
 
     /*
@@ -307,7 +311,7 @@ And finally, create a new file called `reset.css` which will style everything to
 
 And then link it to your document by going into `index.css` and adding the line:
 
-```
+```CSS
     @import './reset.css';
 ```
 
