@@ -1,5 +1,7 @@
 # How to create a simple calculator
 
+For a demo click [here](https://makoeuro.github.io/calculator-tutorial)
+
 ## HTML
 
 To begin, create a new folder and inside a file called `index.html` and use any basic template to start off the project, typically with the basic:
@@ -312,4 +314,4 @@ And then link it to your document by going into `index.css` and adding the line:
 To the top of the file below the other `@` you wrote.
 
 And that should be everything!
->>>>>>> new-feature
+
