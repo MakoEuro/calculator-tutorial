@@ -314,4 +314,3 @@ And then link it to your document by going into `index.css` and adding the line:
 To the top of the file below the other `@` you wrote.
 
 And that should be everything!
-
